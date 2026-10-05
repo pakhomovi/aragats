@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проблема бездомных животных в Армении / Արագած / Aragats</title>
+<meta name="description" content="Почему мы пришли к идее мобильной ветеринарной клиники - контекст проекта «Арагац».">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600;700&family=Noto+Serif+Armenian:wght@500;600;700&family=Noto+Sans:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F2E8;
+    --stone-950:#211F1C;
+    --stone-800:#2B3634;
+    --ink:#26241E;
+    --cream:#F6F2E8;
+    --apricot:#E17F3B;
+    --apricot-deep:#B85F26;
+    --line-soft:rgba(38,36,30,0.14);
+    --line-dark:rgba(246,242,232,0.16);
+    --serif:'Noto Serif','Noto Serif Armenian',Georgia,serif;
+    --sans:'Noto Sans','Noto Sans Armenian',-apple-system,Segoe UI,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  body.lang-hy{line-height:1.85}
+  a{color:inherit}
+  .wrap{max-width:760px;margin:0 auto;padding-inline:28px}
+  :focus-visible{outline:3px solid var(--apricot);outline-offset:3px}
+  h1{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;line-height:1.15}
+
+  header{background:var(--stone-950);padding:18px 0}
+  header .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--cream);text-decoration:none}
+  .brand svg{width:30px;height:22px;flex:none}
+  .back-link{display:flex;align-items:center;gap:24px}
+  .back-link a{color:var(--cream);text-decoration:none;font-size:0.96rem;opacity:.9}
+  .back-link a:hover{opacity:1}
+  .lang-switch{display:flex;gap:2px;background:rgba(246,242,232,0.1);border:1px solid var(--line-dark);border-radius:999px;padding:3px}
+  .lang-switch button{border:none;background:transparent;color:var(--cream);opacity:.65;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.03em;padding:6px 12px;border-radius:999px;cursor:pointer;transition:background .2s ease, opacity .2s ease}
+  .lang-switch button:hover{opacity:1}
+  .lang-switch button[aria-pressed="true"]{background:var(--apricot);color:#fff;opacity:1}
+
+  main{padding:72px 0 88px}
+  h1{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:36px;max-width:18ch}
+  .article p{font-size:1.12rem;margin-bottom:22px;color:rgba(38,36,30,0.88)}
+  .article p:last-child{margin-bottom:0}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--apricot);color:#fff;font-family:var(--sans);font-weight:600;font-size:0.98rem;text-decoration:none;padding:14px 26px;border:none;border-radius:4px;cursor:pointer;transition:background .2s ease, transform .2s ease}
+  .btn:hover{background:var(--apricot-deep);transform:translateY(-1px)}
+
+  footer{background:var(--stone-950);color:var(--cream);padding:48px 0 30px}
+  footer .wrap{max-width:1180px}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:700;font-size:1.05rem}
+  .footer-brand svg{width:24px;height:18px}
+  .footer-bottom{margin-top:20px;color:rgba(246,242,232,0.55);font-size:0.85rem}
+
+  @media (max-width:700px){
+    .back-link{gap:14px}
+    header .wrap{gap:12px}
+    .lang-switch button{padding:8px 12px}
+  }
+</style>
+</head>
+<body class="lang-ru">
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 29 L1 24 L6 10 L11 17 L15 7 L19 15 L23 8 L27 16 L32 11 L36 18 L39 24 L39 29 Z" fill="#F6F2E8"/>
+        <path d="M1 24 L6 10 L11 17 L15 7 L19 15 L23 8 L27 16 L32 11 L36 18 L39 24" stroke="#E17F3B" stroke-width="1.4" fill="none"/>
+      </svg>
+      <span data-i18n="brand">Арагац</span>
+    </a>
+    <div class="back-link">
+      <a href="index.html#help" data-i18n="back_link">&larr; На главную</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="hy" aria-pressed="false">ՀԱՅ</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="article" id="article">
+      <p>Каждый человек, хотя бы раз побывавший в Армении, знает, как остро стоит в стране проблема бездомных животных.</p>
+      <p>Множество домашних собак оказывается на улице после того, как хозяева от них отказываются, сотни собак и кошек рождаются и остаются на улицах. И если в больших городах такие животные часто становятся всеобщими любимцами и могут жить относительно благополучно, за пределами центральных районов складывается совсем иная картина.</p>
+      <p>Животные голодают, болеют, попадают под колеса, становятся жертвами чужой жестокости.</p>
+      <p>Важно отметить, что проблема не остаётся без внимания. Государство предпринимает усилия для регулирования ситуации, в частности в сфере контроля воспроизводства бездомных собак. В Ереване действуют программы стерилизации, вакцинации и возврата животных в привычную среду. Развивается и законодательная база, регулирующая обращение с животными.</p>
+      <p>Это важные шаги, но стерилизация пока не охватывает необходимое количество животных, а возможности для системной работы сильно различаются в зависимости от территории. Особенно сложная ситуация складывается на окраинах городов и в регионах, где ветеринарная инфраструктура развита слабее, а доступ к ветеринарной помощи значительно ограничен. Если мы хотим действительно влиять на ситуацию, работать необходимо не только там, где уже есть необходимая инфраструктура, но и там, где её не хватает.</p>
+      <p>Мы искали решение, которое позволило бы перемещать саму возможность системной работы туда, где она необходима.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <svg viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 29 L1 24 L6 10 L11 17 L15 7 L19 15 L23 8 L27 16 L32 11 L36 18 L39 24 L39 29 Z" fill="#F6F2E8"/>
+        <path d="M1 24 L6 10 L11 17 L15 7 L19 15 L23 8 L27 16 L32 11 L36 18 L39 24" stroke="#E17F3B" stroke-width="1.4" fill="none"/>
+      </svg>
+      <span data-i18n="brand">Арагац</span>
+    </div>
+    <div class="footer-bottom" data-i18n="footer_copy">© 2026 Арагац</div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  ru: {
+    brand:"Арагац",
+    back_link:"\u2190 На главную",
+    detail:[
+      "Каждый человек, хотя бы раз побывавший в Армении, знает, как остро стоит в стране проблема бездомных животных.",
+      "Множество домашних собак оказывается на улице после того, как хозяева от них отказываются, сотни собак и кошек рождаются и остаются на улицах. И если в больших городах такие животные часто становятся всеобщими любимцами и могут жить относительно благополучно, за пределами центральных районов складывается совсем иная картина.",
+      "Животные голодают, болеют, попадают под колеса, становятся жертвами чужой жестокости.",
+      "Важно отметить, что проблема не остаётся без внимания. Государство предпринимает усилия для регулирования ситуации, в частности в сфере контроля воспроизводства бездомных собак. В Ереване действуют программы стерилизации, вакцинации и возврата животных в привычную среду. Развивается и законодательная база, регулирующая обращение с животными.",
+      "Это важные шаги, но стерилизация пока не охватывает необходимое количество животных, а возможности для системной работы сильно различаются в зависимости от территории. Особенно сложная ситуация складывается на окраинах городов и в регионах, где ветеринарная инфраструктура развита слабее, а доступ к ветеринарной помощи значительно ограничен. Если мы хотим действительно влиять на ситуацию, работать необходимо не только там, где уже есть необходимая инфраструктура, но и там, где её не хватает.",
+      "Мы искали решение, которое позволило бы перемещать саму возможность системной работы туда, где она необходима."
+    ],
+    footer_copy:"© 2026 Арагац"
+  },
+  en: {
+    brand:"Aragats",
+    back_link:"\u2190 Back to main site",
+    detail:[
+      "Anyone who has spent even a little time in Armenia knows how acute the stray animal problem is in the country.",
+      "Many pet dogs end up on the street after their owners abandon them, and hundreds of dogs and cats are born and remain there. In large cities these animals often become everyone's favorites and can live relatively well, but outside the central districts the picture is very different.",
+      "Animals go hungry, get sick, are hit by cars, and fall victim to other people's cruelty.",
+      "It is important to note that the problem is not being ignored. The state is making efforts to regulate the situation, particularly in controlling the reproduction of stray dogs. Yerevan runs sterilization, vaccination, and return-to-habitat programs. The legislative framework governing the treatment of animals is also developing.",
+      "These are important steps, but sterilization still does not cover the necessary number of animals, and the capacity for systematic work varies greatly by area. The situation is especially difficult on the outskirts of cities and in regions where veterinary infrastructure is weaker and access to veterinary care is significantly limited. If we truly want to change the situation, we need to work not only where the necessary infrastructure already exists, but also where it is missing.",
+      "We looked for a solution that would let us move the very capacity for systematic work to wherever it is needed."
+    ],
+    footer_copy:"© 2026 Aragats"
+  },
+  hy: {
+    brand:"Արագած",
+    back_link:"\u2190 Գլխավոր էջ",
+    detail:[
+      "Յուրաքանչյուր ոք, ով երբևէ եղել է Հայաստանում, տեսել է, թե որքան տարածված է երկրում անտուն կենդանիների խնդիրը։ Այն առօրյա կյանքի մի մասն է, հատկապես խոշոր քաղաքներից դուրս։",
+      "Շները և կատուները հայտնվում են փողոցում տարբեր պատճառներով։ Որոշ կենդանիներ տերերի կողմից լքվում են, մյուսները ծնվում են հենց փողոցում՝ շարունակելով մի շրջան, որը դժվար է ընդհատել առանց բազմացման վերահսկման։ Խոշոր քաղաքներում անտուն կենդանիները հաճախ կարող են գտնել սնունդ, մարդկանց, ովքեր հոգ են տանում նրանց մասին, և համեմատաբար կայուն պայմաններ։ Սակայն քաղաքային կենտրոններից դուրս իրավիճակը փոխվում է։",
+      "Կենդանիները քաղցած են մնում, հիվանդանում կամ վնասվում։ Նրանց հարվածում են մեքենաները, իսկ որոշ կենդանիներ ենթարկվում են դաժան վերաբերմունքի։ Անասնաբուժական օգնությունը շատ վայրերում սահմանափակ է, իսկ որոշ համայնքներում՝ գրեթե անհասանելի։",
+      "Միևնույն ժամանակ, կարևոր է նշել, որ Հայաստանը այս խնդիրը առանց ուշադրության չի թողնում։",
+      "Պետությունը կարևոր քայլեր է ձեռնարկել, հատկապես անտուն շների բազմացման վերահսկման ուղղությամբ։ Երևանում իրականացվում են ստերիլիզացիայի, պատվաստման և անասնաբուժական օգնության ծրագրեր, ինչպես նաև կենդանիների վերադարձ իրենց բնական միջավայր։ Զարգանում է նաև կենդանիների նկատմամբ պատասխանատու վերաբերմունքը կարգավորող օրենսդրական դաշտը։",
+      "Այս ջանքերը լուծման կարևոր մասն են։ Սակայն այս մասշտաբի խնդիրը պահանջում է շարունակական աշխատանք ամբողջ երկրում, իսկ դրա համար անհրաժեշտ ռեսուրսներն ու ենթակառուցվածքները ամենուր նույնը չեն։",
+      "Քաղաքների ծայրամասերում և բազմաթիվ համայնքներում անասնաբուժական ենթակառուցվածքն ավելի սահմանափակ է, իսկ անասնաբուժական ծառայությունների հասանելիությունը՝ շատ ավելի դժվար։ Արդյունքում առաջանում է մի կարևոր բաց․ այն վայրերը, որոնք հաճախ ամենաշատն են կարիք ունենում համակարգված աշխատանքի, հենց այն վայրերն են, որտեղ այդ աշխատանքն իրականացնելն ամենադժվարն է։",
+      "Մենք կարծում ենք, որ լուծումը չպետք է կախված լինի նրանից, թե արդյոք տվյալ համայնքում արդեն կա անհրաժեշտ ենթակառուցվածքը։",
+      "Փոխարենը մենք պետք է կարողանանք անհրաժեշտ հնարավորությունները հասցնել այնտեղ, որտեղ դրանք անհրաժեշտ են։",
+      "Հենց այս գաղափարի հիմքում է «Արագածի» շարժական անասնաբուժական կլինիկան՝ գործնական և ճկուն լուծում, որը թույլ կտա ստերիլիզացիայի և անասնաբուժական ծառայությունների հնարավորությունը անմիջապես հասցնել այն համայնքներ, որտեղ այսօր դրա հասանելիությունը սահմանափակ է, և համակարգված աշխատանք իրականացնել այնտեղ, որտեղ դրա կարիքն ամենաշատն է։"
+    ],
+    footer_copy:"© 2026 Արագած"
+  }
+};
+
+const article = document.getElementById('article');
+function renderArticle(lang){
+  article.textContent = '';
+  translations[lang].detail.forEach(text => {
+    const p = document.createElement('p');
+    p.textContent = text;
+    article.appendChild(p);
+  });
+}
+
+const LANGS = ['ru', 'en', 'hy'];
+
+// ?lang= from the other page, otherwise the system language, otherwise English
+function detectLang(){
+  const fromUrl = new URLSearchParams(location.search).get('lang');
+  if (LANGS.includes(fromUrl)) return fromUrl;
+  for (const tag of (navigator.languages || [navigator.language])) {
+    const code = String(tag).slice(0, 2).toLowerCase();
+    if (LANGS.includes(code)) return code;
+  }
+  return 'en';
+}
+
+// carry the chosen language over to the other page
+function syncLinks(lang){
+  document.querySelectorAll('a[href*=".html"]').forEach(a => {
+    const [path, hash] = a.getAttribute('href').split('#');
+    a.setAttribute('href', path.split('?')[0] + '?lang=' + lang + (hash ? '#' + hash : ''));
+  });
+}
+
+function setLang(lang){
+  document.documentElement.setAttribute('lang', lang);
+  document.body.className = 'lang-' + lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(translations[lang][key] !== undefined) el.textContent = translations[lang][key];
+  });
+  renderArticle(lang);
+  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+    btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === lang ? 'true' : 'false');
+  });
+  syncLinks(lang);
+}
+document.querySelectorAll('.lang-switch button').forEach(btn=>{
+  btn.addEventListener('click', ()=> setLang(btn.getAttribute('data-lang')));
+});
+
+setLang(detectLang());
+</script>
+</body>
+</html>
